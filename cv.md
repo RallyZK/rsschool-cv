@@ -3,7 +3,7 @@
 ***
 **Contact information:**
 
-Phone: +7 996 336 03 08\
+Phone: +79963360308\
 E-mail: railyabalakaeva@gmail.com\
 Telegram: @rallyzk
 ***
