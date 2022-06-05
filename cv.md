@@ -42,5 +42,5 @@ JS/FE on [rs.school](https://rs.school/) (in progress)
 ***
 **Languages:**
 
-* English - Intermediate (B1/B2) (according to the online test at [EFset](https://www.efset.org/))\
+* English - Intermediate (B1/B2) (according to the online test at [EFset](https://www.efset.org/))
 * Russian - native
