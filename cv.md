@@ -18,6 +18,9 @@ I am an good team worker and very willing to learn and develop new skills. I bel
 **Skills and Proficiency:**
 
 * JavaScript Basics
+* HTML5
+* CSS3
+* VS Code
 * Git, GitHub
 * Adobe Photoshop
 ***
@@ -32,13 +35,17 @@ return a * b;
 **Work experience**
 
 Refinement, site content, editing the site on wordpress [ee16.ru](ee16.ru)\
-Creating and site content the site on Tilda [elt16](elt16.tilda.ws)\
-Creating modules  in VBA Excel
+Creating and content the site on Tilda [elt16](http://etl16.tilda.ws/)\
+Creating modules in VBA Excel
 ***
-**Education and Courses:**
+**Education**
 
-Magistr-engineer of thermal power engineering ([KSPEU](https://kgeu.ru/)) \
-JS/FE on [rs.school](https://rs.school/) (in progress)
+[Kazan State Power Engeneering University](https://kgeu.ru/)\
+Magistr-engineer of thermal power engineering
+***
+**Courses:**
+
+JS/FE Pre-School 2022Q2 on [rs.school](https://rs.school/) (in progress)
 ***
 **Languages:**
 
