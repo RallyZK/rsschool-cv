@@ -1,9 +1,167 @@
-body {
+* {
     padding: 0;
     margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;  
+  }
+
+body {
+    max-width: 800px;
+    margin: 0 auto;   
+    box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 23%); 
     font-family: 'Public Sans', sans-serif;
 }
+
+header {
+    background-color: #2e504f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;   
+}
+
+header ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+}
+
+header a {    
+    color: #fceae4;    
+    padding: 10px 16px;
+    text-decoration: none;    
+}
+
+header a:hover {
+    background-color: #c3dcdb;
+    color: #b06167;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+
+.item1, 
+.item2,
+.item3,
+.item4 {
+    display: flex;
+    flex-direction: column;    
+}
+
+.item1 {
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    height: calc(239 * 1.4)px;
+    width: 239px;
+    margin: 10px 0px;
+}
+
+
+.item2 {    
+    justify-content: flex-end;
+    gap: 10px
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacts-item1 {
+    display: flex;
+    padding: 0;
+    list-style-type: none;      
+}
+
+.contacts-item1 li {
+    display: flex;  
+    margin-right: 15px;     
+}
+
+.contacts-item2 {
+    padding: 0;
+    list-style-type: none;        
+}
+
+.contacts-item2 li {
+    display: flex;  
+    margin-right: 15px;     
+}
+
+.telegram::before,
+.discord::before,
+.github::before,
+.codewars::before,
+.phone::before, 
+.skype::before, 
+.email::before, 
+.linkedin::before { 
+    content: '';   
+    margin-right: 7px;       
+    height: 16px;
+    width: 16px;    
+    background-color: rgb(244, 17, 17);
+    background-image: url('logos/telegram.png');
+}   
+
+
+
+
+
+.item3 {
+    background-color: bisque;
+}
+.item4 {
+    background-color: #2e504f;
+}
+
 
 h1 {
     font-family: 'Cinzel Decorative', cursive;
 }
+
+footer {
+    background-color: #2e504f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; 
+    color: #fceae4;  
+}
+
+footer ul {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #fceae4;        
+}
+
+footer li {
+    margin: 1% 0%;
+    opacity: 0.7;
+ }
+
+ footer li:hover {   
+    opacity: 1;    
+ }
+
+
+ .logo-img {
+    height: 20px;
+    width: 80px;
+ }
