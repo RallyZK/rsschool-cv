@@ -61,7 +61,7 @@ return(R.toUpperCase() + G.toUpperCase() + B.toUpperCase());
 
 * [Pompeo Ceramic Shop](https://rallyzk.github.io/Pompeo-ceramic-shop/) – Adaptive layout, Burger menu
 
-* [ee16.ru](ee16.ru) - Refinement, site content, editing the site on WordPress 
+* [ee16.ru](http://ee16.ru/) - Refinement, site content, editing the site on WordPress 
 
 * [elt16](http://etl16.tilda.ws/) - Creating and content the site on Tilda 
 
