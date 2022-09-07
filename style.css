@@ -318,7 +318,11 @@ footer li:hover {
 @media (max-width: 585px) {
     main {
         grid-template-columns: 1fr;
-        grid-template-rows: 15% 15% 30% 40%;
+        grid-template-rows: 15% 15% 25% 40%;
+    }
+
+    .item4 {
+        margin-top: 15px;
     }
     .photo {
         display: none;
@@ -359,8 +363,13 @@ footer li:hover {
 @media (max-width: 585px) {
     main {
         grid-template-columns: 1fr;
-        grid-template-rows: 13% 15% 35% 40%;
+        grid-template-rows: 13% 15% 26% 40%;
     }
+
+    .item4 {
+        margin-top: 15px;
+    }
+
     .contacts {
         margin: 0 auto;
     }
@@ -379,7 +388,7 @@ footer li:hover {
 
 main {
     grid-template-columns: 1fr;
-    grid-template-rows: 12% 15% 27% 40%;
+    grid-template-rows: 12% 15% 26% 40%;
 }
 
 header {
