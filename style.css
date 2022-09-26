@@ -78,11 +78,21 @@ span {
     font-size: 70px;
 }
 
-h1 {}
 
-h2 {
-    margin-bottom: 20px;
+.item2 p {
+    display: flex;    
 }
+.item2 p::before {
+    content: '';
+    display: block;    
+    margin-right: 7px;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    opacity: 0.9;
+    background-image: url('logos/location-pointer.png');
+}
+
 
 h3 {
     display: inline;
@@ -289,7 +299,7 @@ footer li:hover {
 }
 
 @media (max-width: 680px) {
-
+    
     h1 {
         font-size: 32px;
     }
@@ -320,6 +330,11 @@ footer li:hover {
         grid-template-columns: 1fr;
         grid-template-rows: 15% 15% 25% 40%;
     }
+
+    .item2 p {        
+        margin: 10px auto;
+    }
+
 
     .item4 {
         margin-top: 15px;
