@@ -35,7 +35,8 @@
         <div class="item1"><img class="photo" src="pics/наCV1.jpg" alt="Photo"></div>
         <div class="item2">
             <h1>Balakaeva <span>Railia</span></h1>
-            <h2>Future Front-End Developer</h2>
+            <h2>Front-End Developer</h2>
+            <p>Kazan, Russia</p>
             <img class="photo-mob" src="pics/photo-round.jpg" alt="Photo">
             <div class="contacts">
                 <ul class="contacts-item1" id="contacts">
@@ -130,39 +131,44 @@
             </div>
             <div>
                 <h3 id="code">Code example</h3>
-                <p>Task: to write function that passing in RGB decimal values will result in a hexadecimal
-                    representation being returned.</p>
+                <p>Task: to write a function which formats a duration, given as a number of seconds, in a human-friendly way.</p>
                 <div class="code">
-                    <code>function rgb (r, g, b) {<br>
-                        <br>
-    if (r <= 0) r = '00'<br>
-    else if (r > 0 && r < 10) r = '0' + r<br>
-    else if (r > 255) r = 255<br>
-    <br>
-    if (g <= 0) g = '00'<br>
-    else if (g > 0 && g < 10) g = '0' + g<br>
-    else if (g > 255) g = 255<br>
-    <br>
-    if (b <= 0) b = '00'<br>
-    else if (b > 0 && b < 10) b = '0' + b<br>
-    else if (b > 255) {b = 255}<br>
-    <br>
-    let R, G, B;<br>
-    <br>
-    if (r.toString(16).length < 2) R = '0' + r.toString(16)<br>
-    else R = r.toString(16)<br>
-    if (g.toString(16).length < 2) G = '0' + g.toString(16)<br>
-    else G = g.toString(16)<br>
-    if (b.toString(16).length < 2) B = '0' + b.toString(16)<br>
-    else B = b.toString(16)<br>
-    <br>
-    return(R.toUpperCase() + G.toUpperCase() + B.toUpperCase()); <br> 
-    <br>
+                    <code>function formatDuration (seconds) {<br>                        
+let y, d, h, m, s, res = '';<br>
+y = Math.floor(seconds / (31536000));<br>
+d = Math.floor((seconds - y * 31536000) / (86400));<br>
+h = Math.floor((seconds - y * 31536000 - d * 86400) / (3600));<br>
+m = Math.floor((seconds - y * 31536000 - d * 86400 - h * 3600) / (60));<br>
+s = seconds - y * 31536000 - d * 86400 - h * 3600 - m * 60;<br>
+
+let arr = [[y, 'year'], [d, 'day'], [h, 'hour'], [m, 'minute'], [s, 'second']]<br>
+let resarr = arr.filter(el => el[0] !== 0)<br>
+                        
+resarr.forEach(el => {<br>
+    if (el[0] !== 1) {<br>
+        el[1] = el[1] + 's'<br>
+    }<br>
+})<br>
+if (resarr.length === 0) {<br>
+    res = 'now';<br>
+} else {<br>
+let nokta = ', '<br>
+for (let i = 0; i < resarr.length; i++) {<br>
+if (i === resarr.length - 2) {<br>
+nokta = ' and '<br>
+res = res + resarr[i][0] + ' ' + resarr[i][1] + nokta<br>
+} else if (i === resarr.length - 1) {<br>
+res = res + resarr[i][0] + ' ' + resarr[i][1]<br>
+} else {<br>
+res = res + resarr[i][0] + ' ' + resarr[i][1] + nokta<br>
+}<br>
+}<br>
+}<br>
+return res   <br>                     
 }</code>
                 </div>
             </div>
         </div>
-
 
         </div>
     </main>
