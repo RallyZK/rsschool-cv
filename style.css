@@ -118,8 +118,8 @@ ul {
 }
 
 .photo {
-    height: calc(239 * 1.4)px;
-    width: 239px;
+    height: calc(200 * 1.4)px;
+    width: 200px;
     margin: 10px 0px;
     border-radius: 0px 35px 0px 35px;
 }
@@ -256,7 +256,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 30px;
-    color: #fceae4;
+    color: #fceae4;    
 }
 
 footer ul {
@@ -311,6 +311,7 @@ footer li:hover {
     body {
         font-size: 12px;
     }
+
 }
 
 
@@ -331,7 +332,7 @@ footer li:hover {
         grid-template-rows: 15% 15% 25% 40%;
     }
 
-    .item2 p {        
+    .item2 p {
         margin: 10px auto;
     }
 
@@ -365,6 +366,10 @@ footer li:hover {
 
     header {
         font-size: 10px;
+    }
+
+    .experience {
+        margin-bottom: 20px;
     }
 }
 

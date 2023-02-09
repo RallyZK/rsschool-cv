@@ -29,7 +29,7 @@
                 <li><a href="#languages">Languages</a></li>
                 <li><a href="#experience">Work experience</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#code">Code</a></li>
+                <!-- <li><a href="#code">Code</a></li> -->
             </ul>
         </nav>
     </header>
@@ -38,23 +38,23 @@
         <div class="item2">
             <h1>Balakaeva <span>Railia</span></h1>
             <h2>Software Development Engineer</h2>
-            <p>Kazan, Russia</p>
+            <!-- <p>Kazan, Russia</p> -->
             <img class="photo-mob" src="pics/photo-round.jpg" alt="Photo">
             <div class="contacts">
                 <ul class="contacts-item1" id="contacts">
+                    <li class="telegram"><a href="https://t.me/RallyZK" target="_blank">RallyZK</a></li>
                     <li class="discord"><a href="https://discordapp.com/users/7209" target="_blank">RallyZK#7209</a>
                     </li>
-                    <li class="telegram"><a href="https://t.me/RallyZK" target="_blank">RallyZK</a></li>
-                    <li class="github"><a href="https://github.com/RallyZK" target="_blank">RallyZK</a></li>
-                    <li class="codewars"><a href="https://www.codewars.com/users/RallyZK" target="_blank">RallyZK</a>
-                    </li>
+                    <!-- <li class="github"><a href="https://github.com/RallyZK" target="_blank">RallyZK</a></li> -->
+                    <!-- <li class="codewars"><a href="https://www.codewars.com/users/RallyZK" target="_blank">RallyZK</a>
+                    </li> -->
                 </ul>
                 <ul class="contacts-item2">
-                    <li class="phone">+7 (996) 336-03-08</li>
-                    <li class="email">railyabalakaeva@gmail.com</li>
+                    <!-- <li class="phone">+7 (996) 336-03-08</li> -->
                     <li class="skype">railyabalakaeva</li>
-                    <li class="linkedin"><a href="https://www.linkedin.com/in/railia-balakaeva/railya-balakaeva"
-                            target="_blank">railya-balakaeva</a></li>
+                    <li class="email">railyabalakaeva@gmail.com</li>
+                    <!-- <li class="linkedin"><a href="https://www.linkedin.com/in/railia-balakaeva/railya-balakaeva"
+                            target="_blank">railya-balakaeva</a></li> -->
                 </ul>
             </div>
         </div>
@@ -73,35 +73,34 @@
                 </p>
             </div>
             <div>
+                <h3 id="education">Education</h3>
+                <p><a href="https://kgeu.ru/" target="_blank">Kazan State Power Engeneering University</a><br>
+                    Magistr-engineer of thermal power engineering</p>
+            </div>
+            <div>
+                <h3 id="languages">Languages</h3>
+                <ul>
+                    <li>English - Intermediate <a href="https://www.efset.org/cert/4BzWY1" target="_blank">(B1/B2)</a></li>
+                    <li>Russian - native</li>
+                    <li>Tatar - native</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item4">
+            <div>
                 <h3 id="skills">Skills</h3>
                 <ul>
                     <li>HTML, CSS, SCSS, Sass</li>
-                    <li>JavaScript Basics</li>
-                    <li>VS Code</li>
+                    <li>JavaScript</li> 
+                    <li>TypeScript</li>
                     <li>Webpack</li>
-                    <li>Node.js</li>
+                    <li>TailWind</li>
                     <li>Git, GitHub</li>
                     <li>MS Excel</li>
                     <li>Adobe Photoshop</li>
                     <li>Figma</li>
                 </ul>
             </div>
-            <div>
-                <h3 id="languages">Languages</h3>
-                <ul>
-                    <li>English - Intermediate (B1/B2) (according to the online test at <a
-                            href="https://www.efset.org/cert/4BzWY1" target="_blank">EFset</a>)</li>
-                    <li>Russian - native</li>
-                </ul>
-            </div>
-        </div>
-        <div class="item4">
-            <div>
-                <h3 id="education">Education</h3>
-                <p><a href="https://kgeu.ru/" target="_blank">Kazan State Power Engeneering University</a><br>
-                    Magistr-engineer of thermal power engineering</p>
-            </div>
-
             <div>
                 <h3 id="courses">Courses</h3>
                 <ul>
@@ -112,7 +111,7 @@
                         progress)</li>
                 </ul>
             </div>
-            <div>
+            <div class="experience">
                 <h3 id="experience">Work experience</h3>
                 <ul>
                     <li><a href="https://rolling-scopes-school.github.io/rallyzk-JSFEPRESCHOOL2022Q2/momentum/"
@@ -137,50 +136,7 @@
                     <li><a href="http://etl16.tilda.ws/" target="_blank">etl16.tilda.ws</a> - Creating and content the
                         site on Tilda</li>
                 </ul>
-
             </div>
-            <div>
-                <h3 id="code">Code example</h3>
-                <p>Task: to write a function which formats a duration, given as a number of seconds, in a human-friendly
-                    way.</p>
-                <div class="code">
-                    <code>function formatDuration (seconds) {<br>                        
-let y, d, h, m, s, res = '';<br>
-y = Math.floor(seconds / (31536000));<br>
-d = Math.floor((seconds - y * 31536000) / (86400));<br>
-h = Math.floor((seconds - y * 31536000 - d * 86400) / (3600));<br>
-m = Math.floor((seconds - y * 31536000 - d * 86400 - h * 3600) / (60));<br>
-s = seconds - y * 31536000 - d * 86400 - h * 3600 - m * 60;<br>
-
-let arr = [[y, 'year'], [d, 'day'], [h, 'hour'], [m, 'minute'], [s, 'second']]<br>
-let resarr = arr.filter(el => el[0] !== 0)<br>
-                        
-resarr.forEach(el => {<br>
-    if (el[0] !== 1) {<br>
-        el[1] = el[1] + 's'<br>
-    }<br>
-})<br>
-if (resarr.length === 0) {<br>
-    res = 'now';<br>
-} else {<br>
-let nokta = ', '<br>
-for (let i = 0; i < resarr.length; i++) {<br>
-if (i === resarr.length - 2) {<br>
-nokta = ' and '<br>
-res = res + resarr[i][0] + ' ' + resarr[i][1] + nokta<br>
-} else if (i === resarr.length - 1) {<br>
-res = res + resarr[i][0] + ' ' + resarr[i][1]<br>
-} else {<br>
-res = res + resarr[i][0] + ' ' + resarr[i][1] + nokta<br>
-}<br>
-}<br>
-}<br>
-return res   <br>                     
-}</code>
-                </div>
-            </div>
-        </div>
-
         </div>
     </main>
     <footer>
