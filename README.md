@@ -1,1 +1,1 @@
-# rsschool-cv
+CV: https://rallyzk.github.io/rsschool-cv/
